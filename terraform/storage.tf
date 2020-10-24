@@ -2,6 +2,11 @@ resource "google_storage_bucket" "this" {
   name                        = var.config.site.domain
   force_destroy               = true
   uniform_bucket_level_access = true
+
+  website {
+    main_page_suffix = "index.html"
+    not_found_page   = "404.html"
+  }
 }
 
 # NOTE: This requires adding "Owner" and "Project Owner" to gcloud auth'd user
