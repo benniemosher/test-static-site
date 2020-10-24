@@ -8,5 +8,10 @@ variable "config" {
     site = {
       domain = "test.benniemosher.dev"
     }
+    users = {
+      admin = [
+        "user:benniemosher@gmail.com"
+      ]
+    }
   }
 }
