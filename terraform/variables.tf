@@ -11,7 +11,7 @@ variable "config" {
     }
     site = {
       domain = "test.benniemosher.dev"
-      org = "Bennie Mosher"
+      org    = "Bennie Mosher"
     }
     users = {
       admin = [
