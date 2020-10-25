@@ -4,11 +4,13 @@ on:
   push:
     paths:
       - "**.tf"
+      - ".github/workflows/terraform.yml"
     branches:
       - master
   pull_request:
     paths:
       - "**.tf"
+      - ".github/workflows/terraform.yml"
 
 jobs:
   terraform:
