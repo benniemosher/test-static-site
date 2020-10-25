@@ -1,3 +1,7 @@
+locals {
+  dashed_domain = replace(var.config.site.domain, ".", "-")
+}
+
 variable "config" {
   default = {
     google = {
@@ -7,6 +11,7 @@ variable "config" {
     }
     site = {
       domain = "test.benniemosher.dev"
+      org = "Bennie Mosher"
     }
     users = {
       admin = [
